@@ -10,9 +10,9 @@ readme= "README.md"
 
 [dependencies]
 casbin = { version = "2.1.0", default-features = false }
-sqlx = { version = "0.8", default-features = false, features = [ "macros" ] }
+sqlx = { git = "https://github.com/whamcloud/sqlx.git", branch = "whamcloud-2025-05-20", default-features = false, features = [ "macros" ] }
 async-trait = "0.1.81"
-dotenv = { version = "0.15.0", default-features = false }
+dotenvy = { version = "0.15.0", default-features = false }
 tokio = { version = "1.39", default-features = false, optional = true }
 async-std = { version = "1.9.0", default-features = false, optional = true }
 
